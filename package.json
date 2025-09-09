@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "pnpm --filter @leishanglin/utils dev",
     "build": "pnpm --filter @leishanglin/utils build",
-    "test": "pnpm --filter @leishanglin/utils test"
+    "test": "pnpm --filter @leishanglin/utils test",
+    "coverage": "pnpm --filter @leishanglin/utils coverage"
   },
   "devDependencies": {
     "tsup": "^8.5.0",
