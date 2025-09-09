@@ -1,0 +1,17 @@
+{
+  "name": "@leishanglin/utils",
+  "version": "0.1.0",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsup src/index.ts --watch --dts",
+    "build": "tsup src/index.ts --dts",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.0",
+    "vitest": "^2.1.1",
+    "typescript": "^5.6.3"
+  }
+}
