@@ -1,9 +1,41 @@
 {
   "name": "@leishanglin/utils",
   "version": "0.1.0",
+  "description": "我的开发工具包",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "utils",
+    "typescript",
+    "javascript",
+    "library",
+    "esm",
+    "cjs"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/leishanglin/utils.leishanglin.com#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leishanglin/utils.leishanglin.com"
+  },
+  "bugs": {
+    "url": "https://github.com/leishanglin/utils.leishanglin.com/issues"
+  },
+  "author": "leishanglin <aisowe@sina.com>",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "tsup src/index.ts --watch --dts",
     "build": "tsup src/index.ts --dts",
