@@ -1,6 +1,6 @@
 {
   "name": "@leishanglin/utils",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "我的开发工具包",
   "publishConfig": {
     "access": "public"
@@ -23,14 +23,14 @@
     "url": "https://github.com/leishanglin/utils.leishanglin.com/issues"
   },
   "author": "leishanglin <aisowe@sina.com>",
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     }
   },
   "files": [
