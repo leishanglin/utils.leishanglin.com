@@ -1,6 +1,6 @@
 {
   "name": "@leishanglin/utils",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "我的开发工具包",
   "publishConfig": {
     "access": "public"
@@ -35,7 +35,7 @@
   },
   "files": [
     "dist",
-    "../../README.md"
+    "README.md"
   ],
   "scripts": {
     "dev": "tsup --watch",
