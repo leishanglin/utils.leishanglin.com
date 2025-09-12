@@ -1,2 +1,1 @@
-export { sayHello } from "./sayHello";
-export { add } from "./add";
+export { formatBytes } from "./formatBytes";
