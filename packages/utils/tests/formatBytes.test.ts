@@ -41,6 +41,10 @@ describe("formatBytes", () => {
     expect(() => formatBytes(2.35 * 1024 ** 2)).toThrow();
   });
 
+  it("should throw error for negative input", () => {
+    expect(() => formatBytes(Number.MAX_VALUE)).toThrow();
+  });
+
   it("should throw error for non-integer or invalid input", () => {
     expect(() => formatBytes("abc")).toThrow();
     expect(() => formatBytes(12.34 as any)).toThrow();
