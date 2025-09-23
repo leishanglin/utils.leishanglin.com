@@ -18,18 +18,6 @@ importers:
         specifier: ^3.2.4
         version: 3.2.4
 
-  packages/playground:
-    devDependencies:
-      '@leishanglin/utils':
-        specifier: workspace:*
-        version: link:../utils
-      typescript:
-        specifier: ~5.8.3
-        version: 5.8.3
-      vite:
-        specifier: ^7.1.2
-        version: 7.1.5
-
   packages/utils:
     devDependencies:
       '@vitest/coverage-v8':
@@ -1019,11 +1007,6 @@ packages:
       typescript:
         optional: true
 
-  typescript@5.8.3:
-    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
-    engines: {node: '>=14.17'}
-    hasBin: true
-
   typescript@5.9.2:
     resolution: {integrity: sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==}
     engines: {node: '>=14.17'}
@@ -2011,8 +1994,6 @@ snapshots:
       - supports-color
       - tsx
       - yaml
-
-  typescript@5.8.3: {}
 
   typescript@5.9.2: {}
 
