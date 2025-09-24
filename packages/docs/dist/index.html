@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="font-size: 16px">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@leishanglin/utils</title>
+    <meta name="keywords" content="leishanglin,javascript,工具函数库,npm" />
+    <meta name="description" content="leishanglin 的 JavaScript 工具函数包，浏览器和 Node 通用" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="leishanglin" />
+    <link rel="canonical" href="https://utils.leishanglin.com/index.html" />
+    <meta property="og:title" content="@leishanglin/utils" />
+    <meta property="og:description" content="leishanglin 的 JavaScript 工具函数包，浏览器和 Node 通用" />
+    <meta property="og:image" content="https://utils.leishanglin.com/images/poster.png" />
+    <meta property="og:site_name" content="https://utils.leishanglin.com" />
+    <meta property="og:url" content="https://utils.leishanglin.com/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="twitter:image" content="https://utils.leishanglin.com/images/poster.png" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="@leishanglin/utils" />
+    <meta property="twitter:description" content="leishanglin 的 JavaScript 工具函数包，浏览器和 Node 通用" />
+    <link rel="icon" type="image/svg+xml" href="https://utils.leishanglin.com/images/favicon.svg" />
+    <link rel="alternate icon" type="image/png" href="https://utils.leishanglin.com/images/favicon.png" />
+    <link rel="shortcut icon" href="https://utils.leishanglin.com/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://utils.leishanglin.com/images/large-favicon.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "@leishanglin/utils",
+        "name": "@leishanglin/utils",
+        "description": "leishanglin 的 JavaScript 工具函数包，浏览器和 Node 通用",
+        "url": "https://utils.leishanglin.com/index.html",
+        "image": "https://utils.leishanglin.com/images/large-favicon.png",
+        "author": {
+          "@type": "Person",
+          "name": "leishanglin"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "https://utils.leishanglin.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://utils.leishanglin.com/images/large-favicon.png"
+          }
+        },
+        "datePublished": "2025-09-24",
+        "dateModified": "2025-09-24"
+      }
+    </script>
+    <link rel="preload" href="https://utils.leishanglin.com/styles/index.css" as="style" />
+    <link rel="preload" href="https://utils.leishanglin.com/styles/github-markdown.min.css" as="style" />
+    <link rel="preload" href="https://utils.leishanglin.com/scripts/index.js" as="script" />
+    <link rel="stylesheet" href="https://utils.leishanglin.com/styles/github-markdown.min.css" />
+		<link rel="stylesheet" href="https://utils.leishanglin.com/styles/hljs-theme-github.min.css" />
+    <link rel="stylesheet" href="https://utils.leishanglin.com/styles/index.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      #md {
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+      }
+      #dateContainer {
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 0.875rem;
+        margin-bottom: 2rem;
+        color: var(--fgColor-muted);
+      }
+      #dateContainer .right-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      @media (max-width: 767px) {
+        #md {
+          padding: 15px;
+        }
+      }
+      @media (max-width: 436px) {
+        .created-date-wrapper {
+          display: none;
+        }
+      }
+    </style>
+    <script>
+      const theme = localStorage.getItem("theme") || "system";
+      const rootElement = document.documentElement;
+      switch (theme) {
+        case "dark":
+          rootElement.classList.remove("light");
+          rootElement.classList.add("dark");
+          break;
+        case "light":
+          rootElement.classList.remove("dark");
+          rootElement.classList.add("light");
+          break;
+        case "system":
+          rootElement.classList.remove("dark");
+          rootElement.classList.remove("light");
+          break;
+        default:
+          console.warn(`Unknown theme value: ${theme}.`);
+      }
+    </script>
+  </head>
+  <body>
+    <header id="pageHeader">
+      <a class="logo-title" href="https://utils.leishanglin.com/" target="_self">
+        <img
+          class="logo"
+          alt="website logo"
+          src="https://utils.leishanglin.com/images/logo.svg"
+        />
+        
+      </a>
+
+      <div class="right-wrapper">
+        <div class="theme-switch"></div>
+      </div>
+    </header>
+    <main id="pageMain">
+      <article id="md">
+        <h1>@leishanglin/utils</h1>
+        <div id="dateContainer">
+          <span>
+            <a href="https://cv.leishanglin.com" title="开发者" target="_blank">leishanglin</a>
+						<span>
+							&nbsp;&nbsp;更新于：
+						</span>
+						<time datetime="2025-09-24">
+							2025-09-24
+						</time>
+          </span>	
+          <div class="right-wrapper">
+            <span class="created-date-wrapper">
+							<span>创建于：</span>
+							<time datetime="2025-09-24">
+								2025-09-24
+							</time>
+            </span>
+            <a
+              href="https://github.com/leishanglin/utils.leishanglin.com"
+              target="_blank"
+              rel="nofollow"
+              name="link to github"
+              title="Link to GitHub"
+              style="
+                display: inline-flex;
+                align-items: center;
+                color: var(--fgColor-muted);
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <p>leishanglin 的 JavaScript 工具函数包，浏览器和 Node 通用。使用 <a href="https://github.com/egoist/tsup"  target="_blank" ref="nofollow">tsup</a> 构建，单元测试覆盖率 100%；</p>
+<h2>安装</h2>
+<pre><code class="language-sh">pnpm add @leishanglin/utils</code></pre><h2>使用</h2>
+<pre><code class="language-js"><span class="hljs-keyword">import</span> { formatBytes } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@leishanglin/utils&quot;</span>;</code></pre><h2>简介</h2>
+<ul>
+<li><a href="https://github.com/leishanglin/utils.leishanglin.com/blob/main/packages/utils/src/formatBytes.ts"  target="_blank" ref="nofollow">formatBytes</a>：将字节（Bytes）转换为最合适的单位，比如：4 KB，2.35 MB</li>
+<li><a href="https://github.com/leishanglin/utils.leishanglin.com/blob/main/packages/utils/src/traverse.ts"  target="_blank" ref="nofollow">traverse</a>：遍历 children 树，支持 BFS 和 DFS</li>
+</ul>
+
+      </article>
+    </main>
+    <script src="https://utils.leishanglin.com/scripts/index.js"></script>
+  </body>
+</html>

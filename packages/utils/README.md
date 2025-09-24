@@ -1,6 +1,15 @@
-# @leishanglin/utils
+---
+title: "@leishanglin/utils"
+keywords: "leishanglin,javascript,工具函数库,npm"
+description: "leishanglin 的 JavaScript 工具函数包，浏览器和 Node 通用"
+author: "leishanglin"
+authorUrl: "https://cv.leishanglin.com"
+datePublished: "2025-09-24"
+domain: "https://utils.leishanglin.com"
+githubUrl: "https://github.com/leishanglin/utils.leishanglin.com"
+---
 
-leishanglin 的 JavaScript 工具函数包，浏览器和 Node 通用。
+leishanglin 的 JavaScript 工具函数包，浏览器和 Node 通用。使用 [tsup](https://github.com/egoist/tsup) 构建，单元测试覆盖率 100%；
 
 ## 安装
 

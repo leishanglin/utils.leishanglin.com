@@ -1,6 +1,6 @@
 # @leishanglin/utils
 
-我的工具包。
+我的工具包，详见：[https://utils.leishanglin.com](https://utils.leishanglin.com)
 
 ## 安装
 

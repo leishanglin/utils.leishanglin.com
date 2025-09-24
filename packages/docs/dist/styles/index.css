@@ -1,0 +1,162 @@
+.markdown-body pre {
+  padding: 0;
+}
+.hljs {
+  background: inherit !important;
+}
+html {
+  background-color: var(--bgColor-default);
+}
+
+/* 页面头部样式 */
+#pageHeader {
+  height: 56px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding-right: 20px;
+  padding-left: 12px;
+  align-items: center;
+}
+#pageHeader .logo-title {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+#pageHeader .logo-title .logo {
+  width: 32px;
+  height: 32px;
+}
+#pageHeader .logo-title {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--fgColor-default);
+  font-size: 1.25rem;
+}
+#pageHeader .right-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* 主题切换按钮样式 START */
+#pageHeader .right-wrapper .theme-toggle {
+  --theme-btn-border-color: #ebebeb;
+  height: 24px;
+  border-radius: 12px;
+  border: 1px solid var(--theme-btn-border-color);
+  display: flex;
+  align-items: center;
+}
+#pageHeader .right-wrapper .theme-toggle .theme-btn {
+  color: var(--borderColor-default);
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  background-color: inherit;
+  padding: 0;
+  position: relative;
+}
+#pageHeader .right-wrapper .theme-toggle .theme-btn svg {
+  /* for e.target.dataset */
+  pointer-events: none;
+}
+#pageHeader .right-wrapper .theme-toggle .theme-btn:hover {
+  color: var(--fgColor-default);
+}
+#pageHeader .right-wrapper .theme-toggle .theme-btn.active {
+  border-color: var(--theme-btn-border-color);
+  color: var(--fgColor-default);
+}
+#pageHeader .right-wrapper .theme-toggle .theme-btn.moon {
+  left: -1px;
+}
+#pageHeader .right-wrapper .theme-toggle .theme-btn.system {
+  right: -1px;
+}
+#pageHeader .lang-switch {
+  font-size: 0.875rem;
+  color: var(--fgColor-muted);
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+#pageHeader .lang-switch:hover {
+  color: var(--fgColor-default);
+}
+:root.dark #pageHeader .right-wrapper .theme-toggle {
+  --theme-btn-border-color: #2e2e2e;
+}
+@media (prefers-color-scheme: dark) {
+  #pageHeader .right-wrapper .theme-toggle {
+    --theme-btn-border-color: #2e2e2e;
+  }
+  :root.light #pageHeader .right-wrapper .theme-toggle {
+    --theme-btn-border-color: #ebebeb;
+  }
+}
+/* 主题切换按钮样式 END */
+
+/* 页面主体样式 */
+#pageMain {
+  padding-top: 56px;
+  min-height: calc(100vh - 32px);
+}
+
+/* Copy Button */
+pre[data-raw] {
+  position: relative;
+}
+pre[data-raw] i.copy {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--fgColor-muted);
+  opacity: 0;
+  transition: all 0.4s ease;
+  border-radius: 4px;
+  user-select: none;
+  font-style: normal;
+}
+pre[data-raw]:hover i.copy {
+  opacity: 100;
+}
+pre[data-raw] i.copy:hover {
+  background-color: var(--bgColor-neutral-muted);
+}
+pre[data-raw] i.copied {
+  border-radius: 0 4px 4px 0;
+  opacity: 100;
+  background-color: var(--bgColor-neutral-muted);
+}
+pre[data-raw] i.copied::before {
+  content: "Copied";
+  position: absolute;
+  font-size: 12px;
+  background-color: var(--bgColor-neutral-muted);
+  height: 100%;
+  width: 70px;
+  left: -71px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px 0 0 4px;
+}
+:root[lang="zh-CN"] pre[data-raw] i.copied::before {
+  content: "已复制";
+}
