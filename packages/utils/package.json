@@ -1,7 +1,7 @@
 {
   "name": "@leishanglin/utils",
   "version": "0.2.6",
-  "description": "我的开发工具包",
+  "description": "leishanglin 的开发工具包",
   "publishConfig": {
     "access": "public"
   },
